@@ -16,9 +16,22 @@
 
 <!-- ------------------------------------------------------------------		----------------------------  Preloader --------------------------	   -------------------------------------------------------------------->
 
+<script>
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+</script>
+
 </head>
 
-<body>
+<body >
+
+	<div id="load_screen">
+		<div id="loading" >
+			<IMG SRC="images/loader.gif">
+		</div>
+	</div>
 	<!--
 		We position the images fixed and therefore need to place them outside of #skrollr-body.
 		We will then use data-anchor-target to display the correct image matching the current section (.gap element).
