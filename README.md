@@ -2,6 +2,7 @@
 
 This project is the product of many years of mi work in mechatronic engineering.
 
-* Facebook: [/MigueloRuiz](https://www.facebook.com/miguelo.ruiz)
+# Contacto:
 * Twitter: [@hola_miguelo](https://twitter.com/hola_miguelo)
+* Web:     [miguelo.me](miguelo.me)
 
