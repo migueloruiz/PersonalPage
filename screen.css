@@ -15,8 +15,7 @@
 
 	body {
 		font-family:sans-serif;
-		/*background: #2E2E2E;*/
-		background: #2E2a2a;
+		background: #2E2E2E;
 	}
 
 	p {
@@ -39,6 +38,11 @@
 		height:24px;
 		margin: 300px auto;
 	}
+
+
+
+
+
 
 	.parallax-image-wrapper {
 		position:fixed;
@@ -158,11 +162,7 @@
 	}
 
 	.gap-90 {
-		height:85%;
-	}
-
-	.gap-150 {
-		height:150%;
+		height:84%;
 	}
 
 	.gap-100 {
@@ -179,7 +179,7 @@
 	.separapdor {
 		background:#2E2E2E;
 		padding:1em;
-		height:8%;
+		height:0%;
 	}
 
 	.content-full {
