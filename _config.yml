@@ -1,0 +1,5 @@
+# Site settings
+title: PersonalPage
+markdown: redcarpet
+pygments: true
+baseurl: /PersonalPage # the subpath of your site, e.g. /blog/
