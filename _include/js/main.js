@@ -1,3 +1,4 @@
+placeholder
 jQuery(function($){
 
 var BRUSHED = window.BRUSHED || {};
@@ -77,10 +78,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/F1.JPG', title : '<img src="_include/img/logo_slider.png" alt="">', thumb : '', url : ''},
-											{image : '_include/img/slider-images/F2.JPG', title : '<img src="_include/img/logo_slider.png" alt="">', thumb : '', url : ''},
-											{image : '_include/img/slider-images/F1.JPG', title : '<img src="_include/img/logo_slider.png" alt="">', thumb : '', url : ''},
-											{image : '_include/img/slider-images/F2.JPG', title : '<img src="_include/img/logo_slider.png" alt="">', thumb : '', url : ''}  
+											{image : 'https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/img/slider-images/F1.JPG', title : '<img src="https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/img/logo_slider.png" alt="">', thumb : '', url : ''},
+											{image : 'https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/img/slider-images/F2.JPG', title : '<img src="https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/img/logo_slider.png" alt="">', thumb : '', url : ''},
+											{image : 'https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/img/slider-images/F1.JPG', title : '<img src="https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/img/logo_slider.png" alt="">', thumb : '', url : ''},
+											{image : 'https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/img/slider-images/F2.JPG', title : '<img src="https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/img/logo_slider.png" alt="">', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   
@@ -405,7 +406,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js', 
+		nope: 'https://raw.githubusercontent.com/miguueelo/PersonalPage/gh-pages/_include/js/placeholder.js', 
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
