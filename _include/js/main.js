@@ -1,4 +1,4 @@
-placeholder
+
 jQuery(function($){
 
 var BRUSHED = window.BRUSHED || {};
