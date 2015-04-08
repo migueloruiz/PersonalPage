@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
-
+lead
 /*************************
 *******Typography******
 **************************/
@@ -647,6 +647,7 @@ input.search-form:hover {
   color: #fff;
 }
 
+
 .recent-work-wrap:hover .overlay {
   opacity: 1;
 }
@@ -659,7 +660,20 @@ input.search-form:hover {
 #services .lead,
 #services h2{
   color: #fff;
+  text-align: center;
 }
+
+#frase {
+  background: #000 url(../images/services/bg_services.png);
+  background-size: cover;
+}
+
+#frase .lead,
+#frase h2{
+  color: #fff;
+  text-align: center;
+}
+
 
 .services-wrap {
   padding: 40px 30px;
