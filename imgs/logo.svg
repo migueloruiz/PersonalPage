@@ -1,5 +1,5 @@
 <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="990px" height="370px" viewBox="-494.5 583.5 990 370" enable-background="new -494.5 583.5 990 370" xml:space="preserve">
+ viewBox="-494.5 583.5 990 370" enable-background="new -494.5 583.5 990 370" xml:space="preserve">
 
 	<g id="miguelo">
 		<polygon id="m1" fill="#32A0D2" points="-433.833,658.208 -480.084,782.761 -435.438,782.761 -407.75,704.942 	"/>
@@ -67,16 +67,19 @@
 			L6.949,789.717z"/>
 	</g>
 	<g id="text">
+		<g class="t1">
+			<text class="t11" transform="matrix(0.9541 0 0 1 34.3174 863.4346)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63">MECHATRONIC</text>
+			<text class="t11" transform="matrix(0.9541 0 0 1 34.3174 939.5195)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63">ENGINEER</text>
+		</g>
 
-		<text transform="matrix(0.9541 0 0 1 34.3174 863.4346)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63.4041">MECHATRONIC</text>
-		<text transform="matrix(0.9541 0 0 1 34.3174 939.5195)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63.4041">ENGINEER</text>
-
-		<!-- <text transform="matrix(0.9541 0 0 1 34.3174 863.4346)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63.4041">FRONT-END</text>
-		<text transform="matrix(0.9541 0 0 1 34.3174 939.5195)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63.4041">DEVELOPER</text> -->
-
-		<!-- <text transform="matrix(0.9541 0 0 1 34.3174 863.4346)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63.4041">iOS</text>
-		<text transform="matrix(0.9541 0 0 1 34.3174 939.5195)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63.4041">DEVELOPER</text> -->
-
+		<g class="t2">
+			<text class="t22" transform="matrix(0.9541 0 0 1 34.3174 863.4346)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63">FRONT-END</text>
+			<text class="t22" transform="matrix(0.9541 0 0 1 34.3174 939.5195)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63">DEVELOPER</text>
+		</g>
+		<g class="t3">
+			<text class="t33" transform="matrix(0.9541 0 0 1 34.3174 863.4346)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63">iOS</text>
+			<text class="t33" transform="matrix(0.9541 0 0 1 34.3174 939.5195)" fill="#818081" font-family="'ProximaNova-Light'" font-size="63">DEVELOPER</text>
+		</g>
 	</g>
-	<circle id="Point" fill="#020607" cx="404.081" cy="686.588" r="4.707"/>
+
 </svg>

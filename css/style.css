@@ -20,7 +20,7 @@ h1 {
   align-content: center;
   flex-direction: column; }
   .FistView .logo {
-    width: 40vw;
+    width: 50vw;
     height: auto;
     min-width: 270px;
     max-width: 550px; }
