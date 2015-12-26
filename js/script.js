@@ -80,11 +80,11 @@ garraAmimation.to('#G1', 1 ,{transformOrigin:"105% -9%",rotation: 35})
 
 textAnimation.set('.t1, .t2, .t3',{ opacity:"0", transformOrigin:"0 0",transform:"translateX(-230px)"})
              .to('.t1', 1 ,{opacity:"1", transformOrigin:"0 0", transform:"translateX(0)"})
-             .to('.t1', 1 ,{opacity:"0", transformOrigin:"0 0", transform:"translateX(230px)", delay:3})
+             .to('.t1', 0.5 ,{opacity:"0", transformOrigin:"0 0", transform:"translateX(100px)", delay:3})
              .to('.t2', 1 ,{opacity:"1", transformOrigin:"0 0", transform:"translateX(0)"})
-             .to('.t2', 1 ,{opacity:"0", transformOrigin:"0 0", transform:"translateX(230px)", delay:3})
+             .to('.t2', 0.5 ,{opacity:"0", transformOrigin:"0 0", transform:"translateX(100px)", delay:3})
              .to('.t3', 1 ,{opacity:"1", transformOrigin:"0 0", transform:"translateX(0)"})
-             .to('.t3', 1 ,{opacity:"0", transformOrigin:"0 0", transform:"translateX(230px)", delay:3})
+             .to('.t3', 0.5 ,{opacity:"0", transformOrigin:"0 0", transform:"translateX(100px)", delay:3})
 
 function starAnimations() {
   textAnimation.play();
