@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 /* line 17, ../src/please-wait.scss */
 body.pg-loading {
@@ -14,7 +14,7 @@ body.pg-loading {
   top: 0;
   z-index: 1000000;
   opacity: 1;
-  background-color: #FFF;
+  background-color: #818181;
   -webkit-transition: background-color 0.4s ease-in-out 0s;
   -moz-transition: background-color 0.4s ease-in-out 0s;
   -ms-transition: background-color 0.4s ease-in-out 0s;
@@ -93,8 +93,9 @@ body.pg-loading {
 /* line 91, ../src/please-wait.scss */
 .pg-loading-screen .pg-loading-html {
   margin-top: 10px;
-  font-family: 'Open Sans', sans-serif;
-  color: #a2a2a2;;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #F5F5F5;
 }
 /* line 94, ../src/please-wait.scss */
 .pg-loading-screen .pg-loading-html.pg-loaded {
@@ -164,11 +165,10 @@ body.pg-loading {
   }
 }
 
-
 .sk-folding-cube {
   margin: 20px auto;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   position: relative;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
@@ -181,16 +181,17 @@ body.pg-loading {
   position: relative;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
-          transform: scale(1.1); 
+          transform: scale(1.1);
 }
 .sk-folding-cube .sk-cube:before {
   content: '';
+  opacity: 0.7;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #A2a2a2;
+  background-color: #32A0D2;
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
           animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;
@@ -215,7 +216,7 @@ body.pg-loading {
 }
 .sk-folding-cube .sk-cube3:before {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s; 
+          animation-delay: 0.6s;
 }
 .sk-folding-cube .sk-cube4:before {
   -webkit-animation-delay: 0.9s;
@@ -225,30 +226,30 @@ body.pg-loading {
   0%, 10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
             transform: perspective(140px) rotateX(-180deg);
-    opacity: 0; 
+    opacity: 0;
   } 25%, 75% {
     -webkit-transform: perspective(140px) rotateX(0deg);
             transform: perspective(140px) rotateX(0deg);
-    opacity: 1; 
+    opacity: 0.7;
   } 90%, 100% {
     -webkit-transform: perspective(140px) rotateY(180deg);
             transform: perspective(140px) rotateY(180deg);
-    opacity: 0; 
-  } 
+    opacity: 0;
+  }
 }
 
 @keyframes sk-foldCubeAngle {
   0%, 10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
             transform: perspective(140px) rotateX(-180deg);
-    opacity: 0; 
+    opacity: 0;
   } 25%, 75% {
     -webkit-transform: perspective(140px) rotateX(0deg);
             transform: perspective(140px) rotateX(0deg);
-    opacity: 1; 
+    opacity: 0.7;
   } 90%, 100% {
     -webkit-transform: perspective(140px) rotateY(180deg);
             transform: perspective(140px) rotateY(180deg);
-    opacity: 0; 
+    opacity: 0;
   }
 }

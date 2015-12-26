@@ -1,56 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 
 	<!--============== Page header ==============-->
-	<meta charset="utf-8">	
+	<meta charset="utf-8">
 	<meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="author" content=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!--============== Page Title ==============-->
-	
+
 	<title>Miguelo Ruiz | Mechatronic Engeenier</title>
-	
+
+	<!--============== Facebook Tags ==============-->
+	<meta property="og:url"                content="http://miguelo.me" />
+	<meta property="og:site_name"          content="Miguelo Ruiz | Mechatronic Engineer" />
+	<meta property="og:type"               content="Portfoil" />
+	<meta property="og:title"              content="Miguelo Ruiz Portfoil" />
+	<meta property="og:description"        content="" />
+	<meta property="og:image"              content="" />
+
 	<!--============== CSS ==============-->
-	<link href="css/please-wait.css" rel="stylesheet">
+	<!-- normalize.css -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" >
+	<!-- Please-wait.css -->
+	<link rel="stylesheet" type="text/css" href="css/please-wait.css">
+	<!-- fullPage.css -->
+	<link rel="stylesheet" type="text/css" href="css/fullPage.css">
 	<!-- Style.css -->
-	<link rel="stylesheet" href="css/style.css">
-	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<!--============== Fav icons ==============-->
 	<!-- <link rel="shortcut icon" href="favicon.png">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png"> -->
-		
+
 </head>
-<body >	
+<body >
 
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<div class="intro">
+				<div id="particles-js"></div>
+				<div class="FistView">
+					<img class="logo" src="imgs/logo.svg"/>
+					<h1>Trasnsformando pixeles y circuitos en experiencias.</h1>
+				</div>
+			</div>
+		</div>
 
-	
-	<section class="center"  >
-		<img src="imgs/logo.png">
-	</section>
+		<!-- <div class="section" id="section1">
 
+				<div class="intro">
+					<h1>Also in sections</h1>
+					<img src="imgs/logo.png" alt="iphone" id="iphone-two" />
+					<p>
+						Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte.
+						Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui.
+						Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+						Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+						Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+						Per alienum torquatos eu.
+					</p>
+				</div>
 
+		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1>No limitations!</h1>
+				<p>Content is a priority. Even if it is so large :)</p>
+			</div>
+		</div>
+		<div class="section fp-auto-height" id="section3" ><h1>End</h1></div> -->
+	</div>
 
 	<!--============== Scripts ==============-->
-	<!-- please-wait -->
+	<!-- PleaseWait.js -->
 	<script type="text/javascript" src="js/please-wait.min.js"></script>
-	
-    <script type="text/javascript">
+
+	<script type="text/javascript">
 		window.loading_screen = window.pleaseWait({
 		logo: "",
-		backgroundColor: '#3C4043',
+		backgroundColor: '#818181',
 		loadingHtml: '<div class="sk-folding-cube"><div class="sk-cube1 sk-cube"></div><div class="sk-cube2 sk-cube"></div><div class="sk-cube4 sk-cube"></div><div class="sk-cube3 sk-cube"></div></div><p>Cosas asombrosas vienen a aquellos que esperan</p>'
 		});
 
 		window.onload = function() {
-		  window.loading_screen.finish();
-		};
+			window.loading_screen.finish();
 
-    </script>
+			$('#fullpage').fullpage({
+				anchors: ['First', 'About Me', 'Work', 'Contact'],
+				sectionsColor: ['#FFFFFF', '#939FAA', '#323539', '#32E439'],
+				scrollOverflow: false
+			});
+
+		};
+	</script>
+
+	<!-- JQuery.js -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!-- Slimscroll.js -->
+	<script type="text/javascript" src="js/slimscroll.min.js"></script>
+	<!-- Fullpage.js -->
+	<script type="text/javascript" src="js/fullPage.min.js"></script>
+	<!-- Particles.js -->
+	<script type="text/javascript" src="js/particles.min.js"></script>
+	<!-- Script.js -->
+	<script type="text/javascript" src="js/script.js"></script>
+
 
 </body>
 </html>
