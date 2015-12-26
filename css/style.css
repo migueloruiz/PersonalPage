@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h1 {
+  font-family: 'Raleway', sans-serif; }
+
+.center, .FistView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; }
+
+.FistView {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column; }
+  .FistView .logo {
+    width: 50vw;
+    height: auto;
+    min-width: 270px;
+    max-width: 550px; }
+  .FistView h1 {
+    font-size: 16px;
+    color: #424242;
+    text-align: center; }
+
+#particles-js {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F5;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 1; }
