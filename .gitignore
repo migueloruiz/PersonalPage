@@ -1,5 +1,6 @@
 ### Sass ###
 .sass-cache/
+.scss
 *.css.map
 
 ### CodeKit ###
