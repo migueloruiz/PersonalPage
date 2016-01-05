@@ -22,8 +22,8 @@ h1 {
   .FistView .logo {
     width: 50vw;
     height: auto;
-    min-width: 270px;
-    max-width: 550px; }
+    min-width: 300px;
+    max-width: 600px; }
   .FistView h1 {
     font-size: 16px;
     color: #424242;

@@ -25,8 +25,8 @@ TweenMax.set('.l_blue', {
   fill:             "transparent",
   stroke:           "#32A0D2",
   strokeWidth:      "5",
-  strokeDasharray:  "1000",
-  strokeDashoffset: "1000",
+  strokeDasharray:  "1500",
+  strokeDashoffset: "1500",
   strokeLinecap:    "round"
 })
 
