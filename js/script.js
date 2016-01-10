@@ -61,7 +61,7 @@ logoIntro.staggerTo('.l_blue', 2.5, {strokeDashoffset:"0"},0.3)
   .staggerTo('.l_blue , .l_blue_max', 2, {fill:"#32A0D2", stroke:"transparent"},0.1,"-=2")
   .staggerTo('.l_gray', 1.2, {fill:"#818081", stroke:"transparent",onComplete: starAnimations},0.1,"-=2" )
   .from('#intro_text', 1.5, {opacity:"0"},"-=0.5")
-  .to('#particles-js', 2.5, {opacity:"1"},"-=0.5")
+  .to('#particles-js', 2.5, {opacity:"1"},"-=0.8")
 
 garraAmimation.to('#G1', 1 ,{transformOrigin:"105% -9%",rotation: 35})
               .to('#G2', 1 ,{transformOrigin:"80% 133%",rotation: -35},"-=1")
