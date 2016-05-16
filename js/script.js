@@ -19,8 +19,9 @@ window.onload = function() {
     // ],
     menu: '#menu',
     scrollOverflow: false,
-    scrollingSpeed: 1400,
+    scrollingSpeed: 700,
     keyboardScrolling: true,
+		responsiveHeight: 600,
     // scrollBar: true,
     //touchSensitivity: 400,
     onLeave: function(index, nextIndex, direction){
