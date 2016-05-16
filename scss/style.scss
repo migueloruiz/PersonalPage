@@ -992,22 +992,22 @@ animation-timing-function: linear;
   and (max-device-width: 667px) {
 
     p{
-      font-size:      14px;
-      line-height:    18px;
+      font-size:      12px;
+      line-height:    15px;
     }
 
     .info{
-      font-size:   18px;
-      line-height: 15px;
+      font-size:   16px;
+      line-height: 10px;
     }
 
     #section1{
       .div_about{
         background:      url(../imgs/me.png);
-        background-size: 240px auto !important;
-        @include rounded-content(200px);
-        min-width: 200px;
-        min-height: 200px;
+        background-size: 200px auto !important;
+        @include rounded-content(150px);
+        min-width: 150px;
+        min-height: 150px;
       }
 
       p{
@@ -1136,10 +1136,11 @@ animation-timing-function: linear;
     .btn{
       width:         200px;
       max-height:    40px;
+      min-height:    40px;
       height:        40px;
-      margin:        5px;
-      padding:       10px 20px;
-      font-size:     14px;
+      margin:        0px;
+      padding:       5px 20px;
+      font-size:     12px;
       line-height:   25px;
       border-radius: 25px;
     }
