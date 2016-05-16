@@ -1,0 +1,1148 @@
+// ====================================
+// 				     Includes
+// ====================================
+
+@import  'mixins';
+
+// ====================================
+// 				       Colors
+// ====================================
+
+$blanco:    #F5F5F5;
+$azul:      #32A0D2;
+$gris:      #818181;
+$gris-alto: #424242;
+$rojo:      #f7484e;
+$verde:     #62bf07;
+
+.me{ background:  $azul; }
+.fb{ background:  #3b5998; }
+.tw{ background:  #00aced; }
+.in{ background:  #007bb5; }
+.git{ background: #35465c; }
+.med{ background: #00ab6b; }
+
+// ====================================
+// 				       Fonts
+// ====================================
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+@font-face {
+  font-family: Nova;
+  src:         url(../fonts/NOVASOLID.otf);
+}
+
+// ====================================
+// 				 Background Styles
+// ====================================
+
+  .pattern-bg{
+    content:           "";
+    background-image:  url(../imgs/texture.png);
+    background-repeat: repeat;
+    opacity:           0.9;
+    top:               0;
+    left:              0;
+    bottom:            0;
+    right:             0;
+    position:          absolute;
+    z-index:           -1;
+  }
+  // @extend .pattern-bg;
+
+// ====================================
+// 				 General Styles
+// ====================================
+
+*{
+  @include border-box;
+}
+
+body{
+  background: $blanco;
+  &::after {
+    @extend .pattern-bg;
+  }
+}
+
+#fullpage{
+  background: transparent;
+}
+
+p{
+  font-family:    'Raleway', sans-serif;
+  font-size:      16px;
+  text-align:     left;
+  text-align:     center;
+  line-height:    25px;
+  letter-spacing: 1px;
+  color:          $gris-alto;
+}
+
+input:focus , textarea:focus, button:focus{
+    outline:none;
+}
+
+// ====================================
+// 				   Text Styles
+// ====================================
+
+.info{
+  @extend p;
+  font-size:   22px;
+  line-height: 30px;
+  color:       $gris-alto;
+}
+
+.justify{
+  text-align: justify;
+}
+
+// ====================================
+// 				  Layer Styles
+// ====================================
+
+.full{
+  height: 100vh !important;
+  width:  100vw !important;
+}
+.col-1-2{
+  @extend .full;
+  width:     50vw !important;
+  max-width: 50vw;
+}
+.col-1-3{
+  @extend .full;
+  width:  33.4vw !important;
+}
+.col-2-3{
+  @extend .full;
+  width:  66.6vw !important;
+}
+
+// ====================================
+// 				  Position Styles
+// ====================================
+
+.center{
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  @extend .full;
+}
+
+.center-colum{
+  display:         flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items:     center;
+  @extend .full;
+}
+
+.row{
+  display:        flex;
+  flex-direction: row;
+  flex-wrap:      nowrap;
+}
+.none-margin{
+  margin:  0;
+  padding: 0;
+}
+
+.center-text{
+  text-align: center !important;
+}
+
+// ====================================
+// 			     Header Styles
+// ====================================
+
+.header{
+  width:      100vw;
+  position:   fixed;
+  top:        0px;
+  display:    block;
+  background: transparent;
+  z-index:    1;
+  @extend .none-margin;
+}
+
+// ====================================
+// 			     Menu Styles
+// ====================================
+
+#btn-menu{
+  width:   50px;
+  height:  50px;
+  margin:  20px;;
+  padding: 0;
+  z-index: 10;
+}
+
+// ====================================
+// 			     Menu Styles
+// ====================================
+.menu {
+  @extend .full;
+  position:         fixed;
+  top:              0;
+  left:             0;
+  background-color: rgba($gris-alto,0.9);
+  z-index:          1;
+
+  &::after {
+    @extend .pattern-bg;
+    opacity: 0.7;
+  }
+
+  ul{
+    @extend .center;
+    flex-direction: column;
+    @extend .none-margin;
+
+    li{
+      width:  300px;
+      height: auto;
+      @extend .none-margin;
+
+      text-decoration: none;
+      text-align:      center;
+      vertical-align:  middle;
+      font-size:       60px;
+      font-family:     'Nova';
+      letter-spacing:  2px;
+      list-style:      none;
+
+      a{
+        text-decoration: none;
+        color:           rgba($gris-alto, 0.7);
+        padding:         9px 18px;
+        display:         block;
+        cursor:          hand;
+      }
+
+      &.active{
+        background: rgba($azul, 0.5);
+        a{
+          color: $gris-alto;
+          &:hover{
+            background: rgba($azul, 0.9);
+          }
+        }
+      }
+
+      &:hover{
+        background: rgba($gris-alto, 0.5);
+      }
+    }
+  }
+}
+
+// ====================================
+// 			  General Section Styles
+// ====================================
+
+.general-section{
+  @extend .center;
+  overflow: hidden;
+  .fp-tableCell{
+    @extend .center;
+    overflow: hidden;
+    .slimScrollDiv{
+      @extend .center;
+      overflow: hidden;
+      .fp-scrollable{
+        @extend .row;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+// ====================================
+// 			        Home Styles
+// ====================================
+
+#section0{
+  @extend .general-section;
+  .fp-tableCell{
+    @extend .center-colum;
+  }
+
+  .logo{
+    width:     50vw;
+    height:    auto;
+    min-width: 300px;
+    max-width: 600px;
+  }
+
+  .mouse{
+    position:  absolute;
+    bottom:    6vh;
+    left:      50%;
+    cursor:    pointer;
+    @include transform-x-50();
+    img{
+      width: 100px;
+      height: auto;
+    }
+  }
+}
+
+// ====================================
+// 			      About Styles
+// ====================================
+
+#section1{
+  background: -webkit-gradient(linear, top left, bottom left, from(rgba($blanco,0.0)), to($blanco));
+  background: -webkit-linear-gradient(rgba($blanco,0.0),$blanco);
+  background: linear-gradient(rgba($blanco,0.0),$blanco);
+
+  @extend .general-section;
+  .fp-tableCell{
+    flex-direction:  column;
+    flex-wrap:       nowrap;
+    align-items:     center;
+    justify-content: center;
+    padding:         5vh 5vw;
+    @extend .full;
+  }
+
+  .div_about{
+    background:      url(../imgs/me.png);
+    background-size: 370px auto;
+    @include rounded-content(300px);
+    min-width: 300px;
+    min-height: 300px;
+    @extend .none-margin;
+    @extend .center;
+    svg{
+      width:     100%;
+      height:    auto;
+      min-width: 150px;
+    }
+  }
+
+  p{
+    max-width: 500px;
+    margin: 15px 0;
+  }
+}
+
+// ====================================
+// 			      WorkFlow Styles
+// ====================================
+
+#section2{
+  background: -moz-linear-gradient(bottom,$blanco 45%,rgba($blanco,0.0) 60%, $blanco 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom,$blanco 45%,rgba($blanco,0.0) 60%, $blanco 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top,$blanco 45%,rgba($blanco,0.0) 60% , $blanco 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  @extend .general-section;
+  .fp-tableCell{
+    flex-direction:  column;
+    flex-wrap:       nowrap;
+    align-items:     center;
+    justify-content: center;
+    padding:         5vh 5vw;
+    @extend .full;
+  }
+
+  .title{
+    width:     80%;
+    height:    auto;
+    max-width: 400px;
+    min-width: 200px;
+    margin:    20px 0;
+  }
+
+  .workflow{
+    height: auto;
+    width:  70%;
+  }
+
+  p{
+    max-width:   500px;
+    margin:      60px 0;
+    font-weight: bold;
+  }
+
+  &::after {
+    @extend .pattern-bg;
+    background-image:    url(../imgs/logos.png);
+    background-position: 0% 0%;
+    background-size:     415px auto;
+    background-color:    $blanco;
+    opacity:             0.3;
+    @include grayscale(0.6);
+    @extend .animated-pattern;
+  }
+}
+
+// ====================================
+// 			     Portfolio Styles
+// ====================================
+
+#section3{
+  @extend .general-section;
+  .fp-tableCell{
+    flex-direction:  column;
+    flex-wrap:       wrap;
+    align-items:     flex-start;
+    justify-content: flex-start;
+  }
+
+  .up{
+    width: 100vw !important;
+    height: 15vh !important;
+    background: $azul;
+    @extend .center;
+    img{
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  .down{
+    width: 100vw !important;
+    height: 85vh !important;
+    display:         flex;
+    flex-direction:  column;
+    flex-wrap:       nowrap;
+    justify-content: center;
+    align-items:     center;
+    align-content: space-between !important;
+    //@extend .full;
+  }
+}
+
+// ====================================
+// 			  Card Style
+// ====================================
+$cardWidth: 100vw;
+$cardHeight: 85vh/7;
+
+.card {
+  background: #000;
+  position:   relative;
+  float:      left;
+  overflow:   hidden;
+  margin:     0;
+  width:      $cardWidth;
+  height:     $cardHeight;
+  text-align: center;
+  cursor:     pointer;
+
+  img {
+    background-position: center;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    display:             block;
+    width:               $cardWidth;
+    height:              $cardHeight;
+    opacity:             0.7;
+    border:              none;
+    @include blur(3px);
+    @include transition(0.5s);
+    @include scale3d(1,1,1);
+  }
+
+  figcaption {
+    position:                    absolute;
+    top:                         0;
+    left:                        0;
+    width:                       $cardWidth;
+    height:                      $cardHeight;
+    padding:                     0;
+    color:                       $blanco;
+    text-transform:              uppercase;
+    font-size:                   1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility:         hidden;
+
+    a{
+      position:    absolute;
+      top:         0;
+      left:        0;
+      width:       100%;
+      height:      100%;
+      z-index:     1000;
+      text-indent: 200%;
+      white-space: nowrap;
+      font-size:   0;
+      opacity:     0;
+    }
+
+    &::before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 300px;
+      background: rgba($azul, 0.7);
+      content: '';
+      @include transition(0.5s);
+      @include scale3d-Rotate3d-Translate3d(1.9,1.4,1,0,0,1,0deg,100%,0,0);
+    }
+
+    &::before,&::after {
+    	pointer-events: none;
+    }
+  }
+
+  p {
+    color:          $blanco;
+    opacity:        0;
+    padding:        0 5px 0 0;
+    margin:         0;
+    max-width:      40%;
+    border-right:   4px solid $gris-alto;
+    text-align:     right;
+    letter-spacing: 1px;
+    line-height:    15px;
+    font-size:      16px;
+    @include transform-center-vertical();
+    right: 5%;
+    @include transition(0.5s);
+  }
+
+  h2 {
+    padding:      0;
+    margin:       0;
+    color:        $blanco;
+    font-size:    26;
+    font-weight:  bold;
+    text-align:   left;
+    word-spacing: 0;
+    line-height: 0;
+    font-weight:  300;
+    @include transform-center-vertical();
+    left:         5%;
+    @include transition(0.5s);
+
+    span {
+    	font-weight: 800;
+    }
+  }
+
+  &:hover{
+    img {
+    	opacity: 0.3;
+      @include blur(0px);
+      @include scale3d(1.5,1.5,1);
+    }
+
+    figcaption::before {
+      @include scale3d-Rotate3d-Translate3d(1.9,1.4,1,0,0,1,20deg,50%,-50%,0);
+    }
+
+    p {
+    	opacity: 1;
+    }
+
+  }
+}
+
+// ====================================
+// 			     Item View
+// ====================================
+
+.itemView{
+  height: 85vh;
+  width: 100vw;
+  display:         flex;
+  flex-direction:  row;
+  flex-wrap:       nowrap;
+  justify-content: center;
+  align-items:     center;
+  align-content: center !important;
+  overflow-y: hidden;
+
+  .itemInfo{
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    display:         flex;
+    flex-direction:  column;
+    flex-wrap:       nowrap;
+    justify-content: center;
+    align-items:     center;
+    align-content:   space-around !important;
+
+    h1{
+      width: 100%;
+      text-align: center;
+    }
+
+    h4{
+      margin: 5px 0;
+
+    }
+
+    p{
+      margin: 0 20px;
+      padding: 0;
+      text-align: justify;
+      font-size: 14px;
+      a{
+        color: $azul;
+        text-decoration: none;
+      }
+    }
+
+    .longText{
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .itemMedia{
+    height:          100%;
+    width:           60%;
+    background:      transparent;
+    display:         flex;
+    flex-direction:  row;
+    flex-wrap:       nowrap;
+    justify-content: center;
+    align-items:     center;
+    align-content:   center !important;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+// ====================================
+// 			     Contact Styles
+// ====================================
+$contactSize: 60vh;
+
+#section4{
+  @extend .general-section;
+  @extend .center;
+  height: $contactSize !important;
+  flex-direction: column;
+  flex-wrap:      nowrap;
+  align-content: center;
+  background-color: $gris-alto;
+
+  .fp-tableCell{
+    flex-direction:  column;
+    flex-wrap:       nowrap;
+    align-items:     center;
+    justify-content: center;
+    align-content:   center;
+    height:          $contactSize !important;
+  }
+
+  img{
+    width: 30%;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 20px;
+  }
+
+  p{
+    color: $blanco;
+    text-align: justify;
+  }
+}
+
+
+// ====================================
+// 			     End Styles
+// ====================================
+$EndSize: 5vh;
+
+#section5{
+  @extend .general-section;
+  @extend .center;
+  height: $EndSize !important;
+  flex-direction: column;
+  flex-wrap:      nowrap;
+  align-content: center;
+  background-color: $azul;
+
+  .fp-tableCell{
+    flex-direction:  row;
+    flex-wrap:       nowrap;
+    align-items:     center;
+    justify-content: center;
+    align-content:   center;
+    height:          $EndSize !important;
+  }
+
+  .credit{
+    color: $blanco;
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    i{
+      color: $rojo;
+    }
+  }
+}
+
+// ====================================
+// 			     Contact Social
+// ====================================
+
+.social{
+  width:   60%;
+  height:  auto;
+  display: block;
+
+  ul{
+    width:  100%;
+    height: 100%;
+    @extend .none-margin;
+
+    display:         flex;
+    flex-direction:  row;
+    flex-wrap:       wrap;
+    justify-content: center;
+    align-items:     center;
+
+    .normal{
+      list-style: none;
+      width: 20%;
+      overflow: hidden;
+      display: inline-block;
+      @extend .none-margin;
+      a{
+        display:         flex;
+        flex-direction:  column;
+        justify-content: center;
+        align-items:     center;
+        width:           100% !important;
+        height:          70px !important;
+        text-decoration: none;
+        overflow:        hidden;
+        text-align:      center;
+        @extend .none-margin;
+
+        i{
+          color: $blanco;
+          @include transition(0.5s);
+          @extend .none-margin;
+          @include transform-y(25%);
+        }
+        p{
+          color: $blanco;
+          opacity: 0;
+          @extend .none-margin;
+          @include transition(0.5s);
+        }
+
+        &:hover{
+          p , i{
+            opacity: 1;
+            @include transform-y(-100%);
+          }
+        }
+      }
+    }
+
+    .principal{
+      @extend .normal;
+      width: 100%;
+      a{
+        p{
+          font-size: 20px;
+        }
+      }
+    }
+
+  }
+}
+
+// ====================================
+// 			  Contact Social Min
+// ====================================
+
+.social_min{
+  @extend .social;
+  width:   70%;
+  margin-top: 30px !important;
+  ul{
+    .normal{
+      width: 15%;
+      a{
+        height:          50px !important;
+        i{
+          @include transform-y(25%);
+          opacity: 1;
+        }
+        p{
+          font-size: 12px;
+          line-height:    10px;
+          letter-spacing: 1px;
+          opacity: 0;
+        }
+        &:hover{
+          p{
+            opacity: 1;
+            @include transform-y(-80%);
+          }
+          i{
+            opacity: 0;
+            @include transform-y(-80%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// ====================================
+// 			  Button Contact From
+// ====================================
+
+.contcatForm{
+  @extend .center-colum;
+  width: 80%;
+  max-height: 250px;
+
+  textarea{
+    color: $blanco;
+    width: 70%;
+    background: transparent;
+    border: none;
+    border-bottom: solid $azul 2px;
+    padding: 5px 25px;
+  }
+
+  input{
+    min-width: 200px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: solid $azul 2px;
+  }
+
+  .errorContaier{
+    margin: 10px;
+  }
+  .errorLable{
+    background-color: $rojo;
+    border-radius: 25px;
+    height: 20px !important;
+    margin: 20px 0;
+    padding: 2px 20px;;
+    font-size: 14px;
+    display: inline;
+  }
+
+  .inline{
+    flex: 1 70% auto;
+    max-width: 70%;
+  }
+
+  .ng-invalid{
+    border: none;
+    border-bottom: solid $rojo 2px;
+  }
+
+  .ng-untouched{
+    border: none;
+    border-bottom: solid $azul 2px;
+  }
+
+  .ng-valid{
+    border-bottom: solid rgba($verde, 1) 3px;
+  }
+}
+
+// ====================================
+// 				  Button Styles
+// ====================================
+
+.btn{
+  width:  250px;
+  max-height: 50px;
+  height: 50px;
+  min-height: 50px;
+  margin:  10px;
+  padding: 10px 20px;
+  font-family:     'Raleway', sans-serif;
+  font-size:       16px;
+  text-decoration: none;
+  text-transform:  uppercase;
+  text-align:      center;
+  letter-spacing:  1px;
+  line-height:     25px;
+  color:            $blanco;
+  background-color: $azul;
+  border:           solid $gris-alto 3px;
+  border-radius:    25px;
+
+  &:hover{
+    color:            $azul;
+    background-color: $blanco;
+  }
+}
+
+.disabled{
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+.btn-back{
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 20px;
+  background: url('../imgs/backBtn.svg');
+}
+
+// ====================================
+// 				 Animated Pattern
+// ====================================
+
+.animated-pattern {
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+-moz-animation-delay: 0s;
+-ms-animation-delay: 0s;
+-o-animation-delay: 0s;
+
+-webkit-animation-duration: 20s;
+-moz-animation-duration: 20s;
+-o-animation-duration: 20s;
+animation-duration: 20s;
+
+-webkit-animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-ms-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+
+-webkit-animation-name: patternbg;
+-moz-animation-name: patternbg;
+-o-animation-name: patternbg;
+-ms-animation-name: patternbg;
+animation-name: patternbg;
+
+-webkit-animation-timing-function: linear;
+-moz-animation-timing-function: linear;
+-o-animation-timing-function: linear;
+animation-timing-function: linear;
+}
+
+@-webkit-keyframes patternbg {
+  0% {
+      background-position: 0 0
+  }
+  100% {
+      background-position: 0 200%
+  }
+}
+
+@-moz-keyframes patternbg {
+  0% {
+      background-position: 0 0
+  }
+  100% {
+      background-position: 0 200%
+  }
+}
+
+@-ms-keyframes patternbg {
+  0% {
+      background-position: 0 0
+  }
+  100% {
+      background-position: 0 200%
+  }
+}
+
+@-o-keyframes patternbg {
+  0% {
+      background-position: 0 0
+  }
+  100% {
+      background-position: 0 200%
+  }
+}
+
+@keyframes patternbg {
+  0% {
+      background-position: 0 0
+  }
+  100% {
+      background-position: 0 100%
+  }
+}
+
+
+// ====================================
+// 				 Media Tags Phone
+// ====================================
+
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 667px) {
+
+    p{
+      font-size:      14px;
+      line-height:    18px;
+    }
+
+    .info{
+      font-size:   18px;
+      line-height: 15px;
+    }
+
+    #section1{
+      .div_about{
+        background:      url(../imgs/me.png);
+        background-size: 240px auto !important;
+        @include rounded-content(200px);
+        min-width: 200px;
+        min-height: 200px;
+      }
+
+      p{
+        margin: 10px 0;
+      }
+    }
+
+    #section3{
+      .up{
+        img{
+          width: 175px;
+          height: auto;
+        }
+      }
+    }
+
+    $contactSize: 100vh;
+    #section4{
+      height: $contactSize !important;
+
+      .fp-tableCell{
+        height:          $contactSize !important;
+      }
+    }
+
+    .contcatForm{
+      width: 90%;
+      max-height: 300px;
+
+      textarea{
+        font-size: 14px;
+        line-height: 15px;
+      }
+      .errorContaier{
+        margin: 0px;
+        text-align: center;
+      }
+      .errorLable{
+        text-align: center;
+        margin: 5px 0;
+        padding: 2px 20px;;
+        font-size: 14px;
+        display: block;
+      }
+
+      .inline{
+        max-width: 80%;
+        margin: 0;
+      }
+    }
+
+    .itemView{
+      overflow-y: scroll;
+      flex-direction:  column;;
+      flex-wrap:       nowrap;
+      justify-content: center;
+      align-items:     center;
+      align-content: space-between;
+
+      .itemInfo{
+        height: 80%;
+        width: 100%;
+        margin-top:25vh;
+
+        h1{
+          font-size: 18px;
+          margin: 10px 0;
+        }
+
+        h4{
+          font-size: 14px;
+          margin: 5px 0;
+
+        }
+
+        p{
+          margin: 0 10px;
+          font-size: 12px;
+        }
+
+        .longText{
+          margin-bottom: 10px;
+        }
+
+      }
+
+      .itemMedia{
+        // visibility: hidden;
+        // display: none;
+        height:          20%;
+        width:           100%;
+        img{
+          width:  100%;
+        }
+      }
+    }
+
+
+    #section5{
+      .credit{
+        font-size: 10px;
+      }
+    }
+
+    .card {
+
+      p {
+        font-size:      12px;
+        right: 2%;
+      }
+
+      h2 {
+        font-size:    20px;
+        left:         2%;
+      }
+
+    }
+
+    .social{
+      width: 100%;
+    }
+
+    .social_min{
+      width: 100%;
+    }
+
+    .btn{
+      width:         200px;
+      max-height:    40px;
+      height:        40px;
+      margin:        5px;
+      padding:       10px 20px;
+      font-size:     14px;
+      line-height:   25px;
+      border-radius: 25px;
+    }
+
+}
