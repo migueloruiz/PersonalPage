@@ -1,0 +1,72 @@
+[
+  {
+    "id":"0001",
+    "title":"Power Glove Intervention",
+    "role":"Mechatronic Engeenier",
+    "image":"imgs/portfolio/power.png",
+    "description":"Wearable para la industria del cine y stop motion.",
+    "long_description": "Desarrollo de wearable dedicado a la animación de stop-motion a través de la intervención del control de videojuegos Power Glove, el cual permite manipular a distancia el software Dragon Frame.",
+    "client":"Homero Ramírez",
+    "clientLink":"http://homeroramirez.com/",
+    "videoLink":"https://vimeo.com/124793121"
+  },
+  {
+    "id":"0002",
+    "title":"Stad Interactivo XXXVI FILPM",
+    "role":"Mechatronic Engeenier, UI Desingner, Software Engeenier",
+    "image":"imgs/portfolio/libros.png",
+    "description":"Stand con relidad aumentada para catalogo de libros.",
+    "long_description": "Desarrollo de stand interactivo para la Feria de Libro del Palacio de Minería 2014, el stand despliega el catalogo de novedades de la editorial Libros UNAM sobre una pantalla traslúcida, e interactuar a través de gestos con las manos simulando os movimientos al leer un libro.",
+    "clientLink":"http://www.libros.unam.mx/",
+    "client":"Libros UNAM"
+  },
+  {
+    "id":"0003",
+    "title":"Cadaver Exquisito",
+    "role":"Proyect Manager, Front-End Developer",
+    "image":"imgs/portfolio/cadaver.png",
+    "description":"Campaña digital para el Museo Soumaya",
+    "long_description": "Activación publicitaria, la cual invita a los usuarios de redes sociales a formar parte de un cadaver esquisto masivo, utilizando el hasta #MiAldea. Se reciben y filtran los comentarios publicados en Twitter, se unifican y crean postales digitales para los usuarios.",
+    "client":"Museo Soumaya",
+    "clientLink":"www.museosoumaya.com.mx/"
+  },
+  {
+    "id":"0004",
+    "title":"Rediseño Decompras.com",
+    "role":"FrontEnd Develpoer, UI Desingner",
+    "image":"imgs/portfolio/decompras.png",
+    "description":"Rediseño visual de E-comerce Decompras.com",
+    "long_description": "En un periodo menor a 24 horas se generó una propuesta de rediseño visual y experiencia de usuario para el e-comerce Decompras.com. Diversos elementos de la propuestas fueron tomados e implementados en la reestructuración y cambio de nombre de la plataforma a ClaroShop.com.",
+    "award":"Primer lugar América Móvil Challeng 2015"
+  },
+  {
+    "id":"0005",
+    "title":"Codex",
+    "role":"iOS Developer, UI Designer",
+    "image":"imgs/portfolio/codex.png",
+    "description":"Apliacción para fomento de lectura",
+    "long_description": "Diseño y desalojo de la aplicación Codex, una plataforma para el fomento de la lectura el México, la cual busca acercar pequeñas dosis de lectura en aquellos momentos muertos, mejorando la experiencia de conocer nuevos título, autores y géneros basados en los gustos del usuario.",
+    "client":"Startup en incubación",
+    "clientLink":"codexapp.xyz"
+  },
+  {
+    "id":"0006",
+    "title":"Teddy Defense",
+    "role":"Mechatronic Engeenier",
+    "image":"imgs/portfolio/teddy.jpg",
+    "description":"Videojuego de relidad virtual",
+    "long_description": "Shooter de realidad virtual sobre la plataforma Oculus Rift y Google CardBoard, el juego consiste en pasar el mayor periodo de tiempo en el un cuarto de juegos a obscuras, donde se es atacado por “peluches zombies”, con ayuda de una una lampara eres capas de abatir a los enemigos.",
+    "award":"Expo DIMEI 2015",
+    "videoLink":"https://vimeo.com/124131536"
+  },
+  {
+    "id":"0007",
+    "title":"UX Claro Musica",
+    "role":"UX & UI Desingner",
+    "image":"imgs/portfolio/claro.png",
+    "description":"Analisis de experiencia de ususrio e interfaz gráfica",
+    "long_description": "Análisis de interfaz y experiencia de usuario de la plataforma Claro Música con base a patrones de diseño, guías de estilo y patrones de uso de la aplicación. Este documento fue considerado para corrección y mejoramiento de la interfaz.",
+    "client":"Claro Musica",
+    "clientLink":"http://www.claromusica.com/"
+  }
+]
