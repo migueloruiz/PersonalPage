@@ -1,5 +1,5 @@
 /*!
- * fullPage 2.7.5
+ * fullPage 2.7.9
  * https://github.com/alvarotrigo/fullPage.js
  * MIT licensed
  *
@@ -191,6 +191,7 @@ html.fp-enabled,
     display: block;
     opacity: 0;
     width: 0;
+    cursor: pointer;
 }
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
