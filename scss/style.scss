@@ -1114,22 +1114,14 @@ animation-timing-function: linear;
     .card {
 
       p {
-        font-size: 12px;
-        right:     2%;
-        max-width:      60%;
+        visibility: hidden;
+        display: none;
       }
 
       h2 {
         font-size:    16px;
         left:         2%;
       }
-
-      &:hover{
-        figcaption::before {
-          @include scale3d-Rotate3d-Translate3d(1.9,1.4,1,0,0,1,20deg,50%,-60%,0);
-        }
-      }
-
     }
 
     .social{
